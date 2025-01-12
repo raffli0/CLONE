@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.simpus.controllers.AdminDashboardController" stylesheets="@../styles/admin_dashboard.css">
+    <!-- Header -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #2a9d8f, #264653); -fx-padding: 10;">
+            <Label text="Sistem Manajemen Puskesmas - Admin" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" fx:id="btnLogout" style="-fx-background-color: #e63946; -fx-text-fill: white;"/>
+        </HBox>
+    </top>
+
+    <!-- Sidebar -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #264653; -fx-padding: 10;" prefWidth="200">
+            <Button text="Data Pasien" fx:id="btnDataPasien" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+            <Button text="List Registrasi" fx:id="btnListRegistrasi" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+            <Button text="Rekam Medis" fx:id="btnRekamMedis" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+            <Button text="Data Petugas" fx:id="btnDataPetugas" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <!-- Content Area -->
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-padding: 10;">
+            <!-- Dashboard Utama-->
+            <VBox fx:id="dashboardPane" spacing="10" alignment="CENTER">
+                <Label text="Selamat Datang di Dashboard Admin" style="-fx-font-size: 16px;"/>
+            </VBox>
+        </StackPane>
+    </center>
+
+</BorderPane>
+
+<!-- Add Data Button -->
+<!-- <Button text="Tambah Data Pasien" fx:id="btnAddDataPasien" style="-fx-background-color: #2a9d8f; -fx-text-fill: white; -fx-padding: 10;"/> -->
+
+
+<!-- Table Data Pasien
+<TableView fx:id="tableDataPasien" style="-fx-font-size: 14px;">
+    <columns>
+        <TableColumn fx:id="colID" text="ID Pasien" prefWidth="100">
+            <cellValueFactory>
+            </cellValueFactory>
+        </TableColumn>
+
+        <TableColumn fx:id="colNama" text="Nama Pasien" prefWidth="200">
+            <cellValueFactory>
+            </cellValueFactory>
+        </TableColumn>
+
+        <TableColumn fx:id="colTanggalLahir" text="Tanggal Lahir" prefWidth="150">
+            <cellValueFactory>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</TableView> -->

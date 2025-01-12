@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.simpus.controllers.ApotekerDashboardController">
+    <!-- Header -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #2a9d8f, #264653); -fx-padding: 10;">
+            <Label text="Sistem Manajemen Puskesmas - Apoteker" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" fx:id="btnLogout" style="-fx-background-color: #e63946; -fx-text-fill: white;"/>
+        </HBox>
+    </top>
+
+    <!-- Sidebar -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #264653; -fx-padding: 10;" prefWidth="200">
+            <Button text="Data Obat" fx:id="btnDataPasien" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+            <Button text="Data Obat" fx:id="btnListRegistrasi" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <!-- Content Area -->
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-padding: 10;">
+            <Label text="Selamat Datang di Dashboard Apoteker" style="-fx-font-size: 14px;"/>
+        </StackPane>
+    </center>
+</BorderPane>

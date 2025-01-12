@@ -1,0 +1,113 @@
+/* General Styles for Admin Dashboard */
+.vbox {
+    -fx-padding: 20;
+    -fx-background-color: #f9f9f9;
+    -fx-spacing: 10;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #333;
+    -fx-margin-bottom: 5px;
+}
+
+/* Button Styles */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.8;
+}
+
+/* Menu Button Style */
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #2a9d8f;
+}
+
+.menu-button-active {
+    -fx-background-color: #2a9d8f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2a9d8f;
+}
+
+/* Input Fields Styling */
+#inputField1, #inputField2, #inputField3 {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+}
+
+/* Active Input Field Styling */
+#inputField1:focused, #inputField2:focused, #inputField3:focused {
+    -fx-border-color: #2a9d8f;
+}
+
+/* Button Container (HBox) */
+.hbox {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-margin-top: 20px;
+}
+
+/* Header Text Styling */
+.header-text {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-margin-bottom: 20px;
+}
+
+/* Cancel Button */
+#btnBatal {
+    -fx-background-color: #e63946;
+    -fx-text-fill: white;
+}
+
+#btnBatal:hover {
+    -fx-background-color: #d32f2f;
+}
+
+/* Save Button */
+#btnSimpan {
+    -fx-background-color: #2a9d8f;
+    -fx-text-fill: white;
+}
+
+#btnSimpan:hover {
+    -fx-background-color: #1f766b;
+}

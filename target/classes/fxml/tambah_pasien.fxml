@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.collections.FXCollections?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:id="contentArea" fx:controller="com.mycompany.simpus.controllers.TambahPasienController" spacing="10" stylesheets="@../styles/tambah_pasien.css" style="-fx-padding: 20; -fx-background-color: #f9f9f9;">
+    <Label text="Tambah Pasien Baru" style="-fx-font-size: 32px; -fx-font-weight: bold;"/>
+
+    <Label text="Id Pasien:" style="-fx-pref-width: 150;"/>
+    <TextField fx:id="txtIdPasien" promptText="Id Pasien" style="-fx-pref-width: 150;" />
+    <TextField fx:id="txtNama" promptText="Nama Pasien" style="-fx-pref-width: 150;"/>
+    <TextField fx:id="txtNik" promptText="NIK" style="-fx-pref-width: 150;"/>
+    <TextField fx:id="txtAlamat" promptText="Alamat" style="-fx-pref-width: 150;"/>
+    <TextField fx:id="txtJenisKelamin" promptText="Jenis Kelamin (L/P)" style="-fx-pref-width: 150;"/>
+    <TextField fx:id="txtInsuransi" promptText="Insuransi" style="-fx-pref-width: 150;"/>
+
+    <HBox spacing="10">
+        <Button text="Batal" fx:id="btnBatal" style="-fx-background-color: #e63946; -fx-text-fill: white;"/>
+        <Button text="Simpan" fx:id="btnSimpan" style="-fx-background-color: #2a9d8f; -fx-text-fill: white;"/>
+    </HBox>
+</VBox>

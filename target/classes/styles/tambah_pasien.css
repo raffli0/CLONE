@@ -1,0 +1,61 @@
+/* Label Styles */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #333;
+    -fx-margin-bottom: 5px;
+}
+
+/* Input Fields */
+#txtIdPasien, #txtNama, #txtNik, #txtAlamat, #txtJenisKelamin, #txtInsuransi {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+}
+
+#txtIdPasien:focused, #txtNama:focused, #txtNik:focused, #txtAlamat:focused, #txtJenisKelamin:focused, #txtInsuransi:focused {
+    -fx-border-color: #2a9d8f;
+}
+
+/* Button Styles */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.8;
+}
+
+/* Cancel Button */
+#btnBatal {
+    -fx-background-color: #e63946;
+    -fx-text-fill: white;
+}
+
+#btnBatal:hover {
+    -fx-background-color: #d32f2f;
+}
+
+/* Save Button */
+#btnSimpan {
+    -fx-background-color: #2a9d8f;
+    -fx-text-fill: white;
+}
+
+#btnSimpan:hover {
+    -fx-background-color: #1f766b;
+}
+
+/* Button Container */
+.hbox {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-margin-top: 20px;
+}

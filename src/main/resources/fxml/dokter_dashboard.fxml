@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.simpus.controllers.DokterDashboardController">
+    <!-- Header -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #2a9d8f, #264653); -fx-padding: 10;">
+            <Label text="Sistem Manajemen Puskesmas - Dokter" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" fx:id="btnLogout" style="-fx-background-color: #e63946; -fx-text-fill: white;"/>
+        </HBox>
+    </top>
+
+    <!-- Sidebar -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #264653; -fx-padding: 10;" prefWidth="200">
+            <Button text="Pemeriksaan" fx:id="btnPemeriksaan" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+            <Button text="Riwayat Resep" fx:id="btnRiwayatResep" style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <!-- Content Area -->
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-padding: 10;">
+            <!-- Dashboard Utama-->
+            <VBox fx:id="dashboardPane" spacing="10" alignment="CENTER">
+                <Label text="Selamat Datang di Dashboard Dokter" style="-fx-font-size: 16px;"/>
+            </VBox>
+
+            <!-- Menu Pemeriksaan Pasien -->
+            <VBox fx:id="pemeriksaanPane" spacing="10" style="-fx-padding: 10;" visible="false" managed="false">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <TextField fx:id="searchField" promptText="Cari Pasien..." style="-fx-font-size: 14px; -fx-pref-width: 200;"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                </HBox>
+
+                <!-- Table Data Pasien -->
+                <TableView fx:id="tablePemeriksaan" style="-fx-font-size: 14px;">
+                    <columns>
+                        <TableColumn fx:id="colIdPasien" text="Id Pasien" prefWidth="100"/>
+                        <TableColumn fx:id="colNama" text="Nama Pasien" prefWidth="150"/>
+                        <TableColumn fx:id="colNik" text="NIK" prefWidth="150"/>
+                        <TableColumn fx:id="colJenisKelamin" text="Jenis Kelamin" prefWidth="100"/>
+                        <TableColumn fx:id="colTanggalLahir" text="Tgl Lahir" prefWidth="100"/>
+                        <TableColumn fx:id="colInsuransi" text="Insuransi" prefWidth="100"/>
+                        <TableColumn fx:id="colAction" text="Action" prefWidth="200"/>
+                    </columns>
+                </TableView>
+
+                <!-- Pagination -->
+                <HBox spacing="10" alignment="CENTER">
+                    <Label text="Menampilkan 1 dari 1 (Filter dari 8 total records)" style="-fx-font-size: 12px;"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button text="Sebelumnya" fx:id="btnPrev" style="-fx-font-size: 12px;"/>
+                    <Button text="1" fx:id="btnPage1" style="-fx-font-size: 12px;"/>
+                    <Button text="Selanjutnya" fx:id="btnNext" style="-fx-font-size: 12px;"/>
+                </HBox>
+            </VBox>
+
+            <!-- Menu List Registrasi -->
+            <VBox fx:id="riwayatResepPane" spacing="10" alignment="CENTER" visible="false" managed="false">
+                <Label text="Selamat Datang di Dashboard Riwayat Resep" style="-fx-font-size: 16px;"/>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

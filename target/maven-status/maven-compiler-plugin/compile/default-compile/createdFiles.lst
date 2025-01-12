@@ -1,0 +1,8 @@
+com\mycompany\simpus\App.class
+com\mycompany\simpus\models\Patient.class
+module-info.class
+com\mycompany\simpus\controllers\AdminDashboardController.class
+com\mycompany\simpus\controllers\DokterDashboardController.class
+com\mycompany\simpus\DatabaseConnection.class
+com\mycompany\simpus\controllers\LoginController.class
+com\mycompany\simpus\controllers\PatientsController.class
